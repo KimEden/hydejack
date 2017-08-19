@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               Hydejack
+title:               이든 블로그
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -10,24 +10,23 @@ url:                 https://qwtel.com
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
-baseurl:             /hydejack
+baseurl:             /kimeden
 
 # A very short description of your page
-tagline:             A pretentious two-column Jekyll theme.
+tagline:             이든 블로그
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Open `_config.yml` to edit this text.
+  꾸미는 블로그야.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+  name:              Kim Eden
+  email:             kimeden0205@gmail.com
 
 # Fallback image and color
-image:               /hydejack/assets/img/nap.jpg
+image:               /Blog/assets/img/nap.jpg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
@@ -83,14 +82,17 @@ paginate_path:       '/page-:num/'
 # -----------------------------------------------------------------------------
 
 collections:
-  featured_categories:
-    permalink:       /category/:name/
+#  featured_categories:
+#    permalink:       /category/:name/
+#    output:          true
+#  featured_tags:
+#    permalink:       /tag/:name/
+#    output:          true
+  Blog:
+    permalink:       /Blog/:path/
     output:          true
-  featured_tags:
-    permalink:       /tag/:name/
-    output:          true
-  projects:
-    permalink:       /projects/:path/
+  Project:
+    permalink:       /Project/:path/
     output:          true
 
 # -----------------------------------------------------------------------------
